@@ -117,7 +117,7 @@ def input():
             for row in data:
                 if (row == header):
                     continue
-                ex.append(row[0])
+                ex.append(row[0].replace("+","\n"))
                 round.append(row[1])
                 timeRest.append(row[2])
         nbrEx = len(round)
